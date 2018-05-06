@@ -11,7 +11,7 @@ root.title("Food Price")
 root.geometry("300x300")
 root.configure(bg="gray")
 
-v=StringVar()
+v=IntVar()
 amount=IntVar()
 result=IntVar()
 
@@ -28,13 +28,13 @@ def print_result():
 label=Label(root, text="Choose item",width=20,bg="gray")
 label.place(x=90,y=10)
 
-btn1=Radiobutton(root, text="Apple",highlightbackground="gray",bg="gray",variable=v,value="Apple")
+btn1=Radiobutton(root, text="Apple",highlightbackground="gray",bg="gray",variable=v,value=0)
 btn1.place(x=30,y=60)
 
-btn2=Radiobutton(root, text="Mango",bg="gray",highlightbackground="gray",variable=v,value="Mango")
+btn2=Radiobutton(root, text="Mango",bg="gray",highlightbackground="gray",variable=v,value=1)
 btn2.place(x=30,y=90)
 
-btn3=Radiobutton(root, text="Fanas",bg="gray",highlightbackground="gray",variable=v,value="Fanas")
+btn3=Radiobutton(root, text="Fanas",bg="gray",highlightbackground="gray",variable=v,value=2)
 btn3.place(x=30,y=120)
 
 labelResult=Label(root, text="Result:",width=5,bg="gray",highlightbackground="gray")
